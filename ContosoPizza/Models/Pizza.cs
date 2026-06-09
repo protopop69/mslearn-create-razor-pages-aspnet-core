@@ -11,8 +11,8 @@ public class Pizza
     public PizzaSize Size { get; set; }
     public bool IsGlutenFree { get; set; }
 
-    [Range(0.01, 9999.99)]
+    [Range(0.01, 200.99)]
     public decimal Price { get; set; }
 }
 
-public enum PizzaSize { Small, Medium, Large }
+public enum PizzaSize { Small, Medium, Large, ExtraLarge }
